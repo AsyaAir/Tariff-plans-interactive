@@ -1,0 +1,61 @@
+.tariff {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    flex: 1 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #faf7f7; /* Белый текст по умолчанию */
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tariff:hover {
+    /* transform: translateY(-5px); */
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); */
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tariff-speed, .tariff-traffic {
+    color: #878686; /* Серый цвет для скорости и трафика */
+}
+
+.tariff.selected {
+    border: 4px solid #ffc107; /* Жёлтая рамка для выбранного тарифа */
+}
+
+.gray-background {
+    background-color: #f0f0f0; /* Светло-серый фон */
+    color: #6c757d; /* Серый текст */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Адаптивное размещение */
+.tariff-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .tariff {
+        flex: 1 1 calc(50% - 20px); /* 2 карточки в ряд на средних экранах */
+    }
+}
+
+@media (max-width: 480px) {
+    .tariff {
+        flex: 1 1 100%; /* 1 карточка в ряд на маленьких экранах */
+    }
+}
+
+.tariff.highlighted {
+    background-color: #ec6060;
+    border-color: #999292;
+    transform: scale(1.18);
+    /* border: 2px solid #dc3545; Подчеркнем выделенный тариф */
+}
