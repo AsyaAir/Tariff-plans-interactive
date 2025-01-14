@@ -13,21 +13,21 @@
 .tariff:hover {
     /* transform: translateY(-5px); */
     /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); */
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 .tariff-speed, .tariff-traffic {
-    color: #878686; /* Серый цвет для скорости и трафика */
+    color: #595656; /* Серый цвет для скорости и трафика */
 }
 
 .tariff.selected {
-    border: 4px solid #ffc107; /* Жёлтая рамка для выбранного тарифа */
+    border: 6px solid #0a0a0a; /* Жёлтая рамка для выбранного тарифа */
 }
 
 .gray-background {
-    background-color: #f0f0f0; /* Светло-серый фон */
-    color: #6c757d; /* Серый текст */
+    background-color: #bebbbb; /* Светло-серый фон */
+    color: #676d72; /* Серый текст */
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
