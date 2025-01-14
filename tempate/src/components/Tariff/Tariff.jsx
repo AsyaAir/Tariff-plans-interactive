@@ -28,7 +28,9 @@ Tariff.propTypes = {
     price: PropTypes.number.isRequired,   // Обязательное число
     speed: PropTypes.number.isRequired,   // Обязательное число
     isHighlighted: PropTypes.bool,         // Необязательное булевое значение
-    backgroundColor: PropTypes.string.isRequired,
+    backgroundColor: PropTypes.string.isRequired, // Обязательная строка
+    isSelected: PropTypes.bool,            // Необязательное булевое значение
+    onClick: PropTypes.func.isRequired,    // Обязательная функция
 };
 
 export default Tariff;

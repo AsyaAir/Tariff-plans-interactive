@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Tariff from './components/Tariff/Tariff';
 import './App.css'; 
 
@@ -8,7 +9,7 @@ const tariffs = [
   { title: 'Безлимитный 1000', price: 1000, speed: 200, backgroundColor: '#343a40' }, // Черный
 ];
 
-function App = () => {
+const App = () => {
   const [selectedTariff, setSelectedTariff] = useState(null);
 
   const handleTariffClick = (index) => {
